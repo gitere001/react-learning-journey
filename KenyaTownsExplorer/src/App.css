@@ -1,0 +1,127 @@
+:root {
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-500: #3b82f6;
+  --color-blue-800: #1e40af;
+  --color-blue-900: #1e3a8a;
+
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-800: #1f2937;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --box-shadow-input: 0 1px 4px rgba(30, 64, 175, 0.1);
+
+  --box-shadow-subtle: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.introduction {
+  background-color: var(--color-blue-50);
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.introduction h1 {
+  color: var(--color-blue-900);
+}
+
+.introduction p {
+  color: var(--color-blue-500);
+}
+
+.search {
+  width: 100%;
+  position: relative;
+}
+
+.search input {
+  height: 50px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 0 30px 0 20px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.search input:focus {
+  box-shadow: var(--box-shadow-input);
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  color: var(--color-gray-400);
+}
+
+.autocomplete {
+  margin-top: 5px;
+  box-shadow: var(--box-shadow-subtle);
+}
+
+.autocomplete-result {
+  padding: 10px;
+  border: .5px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.autocomplete-result h4 {
+  color: var(--color-gray-600);
+  margin-bottom: 5px;
+}
+
+.autocomplete-result p {
+  color: var(--color-gray-500);
+}
+
+.search-result {
+  position: relative;
+  border: 1px solid #ccc;
+  box-shadow: var(--box-shadow-subtle);
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--color-gray-600);
+  margin-top: 10px;
+}
+
+.search-result .x {
+  position: absolute;
+  right: 20px;
+  color: var(--color-gray-600);
+  cursor: pointer;
+}
+
+.search-result h1 {
+  color: var(--color-gray-800);
+}
+
+.search-result h4 {
+  color: var(--color-gray-800);
+}
+
+.features {
+  display: flex;
+  gap: 15px;
+}
+
+.features span {
+  background-color: var(--color-blue-100);
+  padding: 8px;
+  border-radius: 8px;
+  color: var(--color-blue-900);
+}

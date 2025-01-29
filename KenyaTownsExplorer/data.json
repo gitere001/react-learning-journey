@@ -1,0 +1,702 @@
+[
+  {
+    "name": "Ahero",
+    "description": "Rice-growing town in Kisumu County.",
+    "features": [
+      "Rice Irrigation",
+      "Fish Trade",
+      "Market Center"
+    ],
+    "region": "Western Kenya"
+  },
+  {
+    "name": "Bungoma",
+    "description": "A commercial town in western Kenya.",
+    "features": [
+      "Sugarcane Farming",
+      "Trade",
+      "Bukusu Culture"
+    ],
+    "region": "Western Kenya"
+  },
+  {
+    "name": "Burnt Forest",
+    "description": "Agricultural center between Eldoret and Nakuru.",
+    "features": [
+      "Wheat Farming",
+      "Timber Industry",
+      "Transit Point"
+    ],
+    "region": "Rift Valley"
+  },
+  {
+    "name": "Butere",
+    "description": "Market town in Western Kenya.",
+    "features": [
+      "Sugarcane Farming",
+      "Cultural Center",
+      "Education Hub"
+    ],
+    "region": "Western Kenya"
+  },
+  {
+    "name": "Eldoret",
+    "description": "A high-altitude town known for athletics.",
+    "features": [
+      "Athletics Training",
+      "Cool Climate",
+      "Maize Farming"
+    ],
+    "region": "Rift Valley"
+  },
+  {
+    "name": "Embu",
+    "description": "An agricultural town at the base of Mount Kenya.",
+    "features": [
+      "Tea & Coffee",
+      "Scenic Hills",
+      "Trade Center"
+    ],
+    "region": "Eastern Kenya"
+  },
+  {
+    "name": "Garissa",
+    "description": "The capital of Garissa County, near Somalia.",
+    "features": [
+      "Semi-arid",
+      "Somali Culture",
+      "Livestock Market"
+    ],
+    "region": "North Eastern"
+  },
+  {
+    "name": "Gilgil",
+    "description": "Military town between Nakuru and Naivasha.",
+    "features": [
+      "Military Base",
+      "Hot Springs",
+      "Wildlife"
+    ],
+    "region": "Rift Valley"
+  },
+  {
+    "name": "Homa Bay",
+    "description": "A lakeside town on Lake Victoria.",
+    "features": [
+      "Fishing Industry",
+      "Luo Traditions",
+      "Warm Climate"
+    ],
+    "region": "Western Kenya"
+  },
+  {
+    "name": "Isiolo",
+    "description": "A gateway to northern Kenya.",
+    "features": [
+      "Wildlife Tourism",
+      "Pastoralism",
+      "Military Base"
+    ],
+    "region": "Eastern Kenya"
+  },
+  {
+    "name": "Kakamega",
+    "description": "Famous for Kakamega Forest and Luhya culture.",
+    "features": [
+      "Rainforest",
+      "Luhya Traditions",
+      "Sugarcane Farming"
+    ],
+    "region": "Western Kenya"
+  },
+  {
+    "name": "Kangundo",
+    "description": "Hill town known for its cool climate and agriculture.",
+    "features": [
+      "Fruit Farming",
+      "Traditional Crafts",
+      "Educational Centers"
+    ],
+    "region": "Eastern Kenya"
+  },
+  {
+    "name": "Kapenguria",
+    "description": "Historical town known for the Kapenguria Six trial.",
+    "features": [
+      "Historical Sites",
+      "Pokot Culture",
+      "Pastoral Economy"
+    ],
+    "region": "Rift Valley"
+  },
+  {
+    "name": "Karatina",
+    "description": "Home to one of Kenya's largest open-air markets.",
+    "features": [
+      "Fresh Produce Market",
+      "Coffee Farming",
+      "Trade Hub"
+    ],
+    "region": "Central Kenya"
+  },
+  {
+    "name": "Kendu Bay",
+    "description": "Fishing town on Lake Victoria.",
+    "features": [
+      "Fishing Industry",
+      "Luo Culture",
+      "Lake Tourism"
+    ],
+    "region": "Western Kenya"
+  },
+  {
+    "name": "Kericho",
+    "description": "Known for its tea plantations.",
+    "features": [
+      "Tea Estates",
+      "Green Landscapes",
+      "Rainy Climate"
+    ],
+    "region": "Rift Valley"
+  },
+  {
+    "name": "Kerugoya",
+    "description": "Agricultural town at the foothills of Mt. Kenya.",
+    "features": [
+      "Rice Farming",
+      "Coffee Growing",
+      "Market Center"
+    ],
+    "region": "Central Kenya"
+  },
+  {
+    "name": "Kiambu",
+    "description": "A rapidly growing town near Nairobi with rich agricultural land.",
+    "features": [
+      "Coffee Estates",
+      "Real Estate",
+      "Entertainment"
+    ],
+    "region": "Central Kenya"
+  },
+  {
+    "name": "Kilifi",
+    "description": "A coastal town with beautiful beaches.",
+    "features": [
+      "Tourism",
+      "Beaches",
+      "Historic Ruins"
+    ],
+    "region": "Coast"
+  },
+  {
+    "name": "Kirinyaga",
+    "description": "Town with views of Mount Kenya.",
+    "features": [
+      "Rice Paddies",
+      "Cultural Sites",
+      "Mountain Views"
+    ],
+    "region": "Central Kenya"
+  },
+  {
+    "name": "Kisii",
+    "description": "A vibrant town known for soapstone carvings and agriculture.",
+    "features": [
+      "Soapstone Quarries",
+      "Tea Farming",
+      "Education Hub"
+    ],
+    "region": "Western Kenya"
+  },
+  {
+    "name": "Kisumu",
+    "description": "A city on Lake Victoria, known for fishing and trade.",
+    "features": [
+      "Lake Victoria",
+      "Fish Industry",
+      "Warm Climate"
+    ],
+    "region": "Western Kenya"
+  },
+  {
+    "name": "Kitale",
+    "description": "A farming town in western Kenya.",
+    "features": [
+      "Maize Farming",
+      "National Park",
+      "Agricultural Hub"
+    ],
+    "region": "Rift Valley"
+  },
+  {
+    "name": "Kitengela",
+    "description": "Fast-growing industrial and residential town south of Nairobi.",
+    "features": [
+      "Industrial Parks",
+      "Real Estate",
+      "Wildlife Corridors"
+    ],
+    "region": "Rift Valley"
+  },
+  {
+    "name": "Lamu",
+    "description": "A historic Swahili town on the coast.",
+    "features": [
+      "Old Town",
+      "Swahili Culture",
+      "Tourism"
+    ],
+    "region": "Coast"
+  },
+  {
+    "name": "Limuru",
+    "description": "Known for tea plantations and dairy farming.",
+    "features": [
+      "Tea Estates",
+      "Dairy Farms",
+      "Cool Climate"
+    ],
+    "region": "Central Kenya"
+  },
+  {
+    "name": "Litein",
+    "description": "Tea-growing town in Kericho County.",
+    "features": [
+      "Tea Estates",
+      "Education Centers",
+      "Markets"
+    ],
+    "region": "Rift Valley"
+  },
+  {
+    "name": "Lodwar",
+    "description": "Largest town in Turkana County.",
+    "features": [
+      "Oil Exploration",
+      "Turkana Culture",
+      "Desert Tourism"
+    ],
+    "region": "Rift Valley"
+  },
+  {
+    "name": "Londiani",
+    "description": "Highland town known for forestry.",
+    "features": [
+      "Forestry",
+      "Tea Growing",
+      "Cool Climate"
+    ],
+    "region": "Rift Valley"
+  },
+  {
+    "name": "Luanda",
+    "description": "Market town in Vihiga County.",
+    "features": [
+      "Traditional Markets",
+      "Cultural Sites",
+      "Agriculture"
+    ],
+    "region": "Western Kenya"
+  },
+  {
+    "name": "Machakos",
+    "description": "A growing urban center near Nairobi.",
+    "features": [
+      "Growing City",
+      "Kamba Culture",
+      "Entertainment Hub"
+    ],
+    "region": "Eastern Kenya"
+  },
+  {
+    "name": "Malava",
+    "description": "Agricultural town in Kakamega County.",
+    "features": [
+      "Maize Farming",
+      "Forest Reserve",
+      "Cultural Sites"
+    ],
+    "region": "Western Kenya"
+  },
+  {
+    "name": "Malindi",
+    "description": "A coastal town known for beaches and tourism.",
+    "features": [
+      "Resorts",
+      "Marine Park",
+      "Italian Influence"
+    ],
+    "region": "Coast"
+  },
+  {
+    "name": "Mandera",
+    "description": "Located at the border with Somalia and Ethiopia.",
+    "features": [
+      "Border Town",
+      "Hot Climate",
+      "Pastoralism"
+    ],
+    "region": "North Eastern"
+  },
+  {
+    "name": "Maragua",
+    "description": "Agricultural town in Murang'a County.",
+    "features": [
+      "Coffee Growing",
+      "Dairy Farming",
+      "River Fishing"
+    ],
+    "region": "Central Kenya"
+  },
+  {
+    "name": "Maralal",
+    "description": "Gateway to Northern Kenya, known for camel derby.",
+    "features": [
+      "Camel Derby",
+      "Samburu Culture",
+      "Adventure Tourism"
+    ],
+    "region": "Rift Valley"
+  },
+  {
+    "name": "Mariakani",
+    "description": "Transport hub on Mombasa-Nairobi highway.",
+    "features": [
+      "Transport Hub",
+      "Cement Industry",
+      "Livestock Market"
+    ],
+    "region": "Coast"
+  },
+  {
+    "name": "Marsabit",
+    "description": "A remote town in northern Kenya.",
+    "features": [
+      "Mount Marsabit",
+      "Nomadic Culture",
+      "Camel Rearing"
+    ],
+    "region": "North Eastern"
+  },
+  {
+    "name": "Maseno",
+    "description": "University town straddling the equator.",
+    "features": [
+      "Equator Marker",
+      "Education Hub",
+      "Research Center"
+    ],
+    "region": "Western Kenya"
+  },
+  {
+    "name": "Matuu",
+    "description": "Agricultural town in Machakos County.",
+    "features": [
+      "Mango Farming",
+      "Green Grams",
+      "Market Center"
+    ],
+    "region": "Eastern Kenya"
+  },
+  {
+    "name": "Mbita",
+    "description": "Lakeside town with research facilities.",
+    "features": [
+      "Research Center",
+      "Fishing",
+      "Island Access"
+    ],
+    "region": "Western Kenya"
+  },
+  {
+    "name": "Meru",
+    "description": "Known for miraa (khat) farming.",
+    "features": [
+      "Miraa Farming",
+      "Trade Hub",
+      "Cool Climate"
+    ],
+    "region": "Eastern Kenya"
+  },
+  {
+    "name": "Migori",
+    "description": "A trade and mining town in western Kenya.",
+    "features": [
+      "Gold Mining",
+      "Fish Trade",
+      "Luo & Kuria Culture"
+    ],
+    "region": "Western Kenya"
+  },
+  {
+    "name": "Molo",
+    "description": "Agricultural town famous for potato farming.",
+    "features": [
+      "Potato Farming",
+      "Timber Industry",
+      "Cool Weather"
+    ],
+    "region": "Rift Valley"
+  },
+  {
+    "name": "Mombasa",
+    "description": "A coastal city and Kenya’s largest port.",
+    "features": [
+      "Beaches",
+      "Swahili Culture",
+      "Historic Sites"
+    ],
+    "region": "Coast"
+  },
+  {
+    "name": "Moyale",
+    "description": "A border town between Kenya and Ethiopia.",
+    "features": [
+      "Cross-border Trade",
+      "Somali Culture",
+      "Nomadic Life"
+    ],
+    "region": "North Eastern"
+  },
+  {
+    "name": "Muhoroni",
+    "description": "Sugar belt town with processing facilities.",
+    "features": [
+      "Sugar Industry",
+      "Agriculture",
+      "Railway Station"
+    ],
+    "region": "Western Kenya"
+  },
+  {
+    "name": "Mumias",
+    "description": "Known for sugarcane farming and Mumias Sugar Company.",
+    "features": [
+      "Sugar Industry",
+      "Luhya Culture",
+      "Warm Climate"
+    ],
+    "region": "Western Kenya"
+  },
+  {
+    "name": "Mwingi",
+    "description": "Trading center in Kitui County.",
+    "features": [
+      "Honey Production",
+      "Basket Weaving",
+      "Livestock Trade"
+    ],
+    "region": "Eastern Kenya"
+  },
+  {
+    "name": "Nairobi",
+    "description": "The capital city and Kenya’s economic hub.",
+    "features": [
+      "Skyscrapers",
+      "Tech Hub",
+      "Traffic Congestion"
+    ],
+    "region": "Central Kenya"
+  },
+  {
+    "name": "Naivasha",
+    "description": "Famous for Lake Naivasha and flower farming.",
+    "features": [
+      "Lake Naivasha",
+      "Flower Exports",
+      "Wildlife"
+    ],
+    "region": "Rift Valley"
+  },
+  {
+    "name": "Nakuru",
+    "description": "Famous for Lake Nakuru and flamingos.",
+    "features": [
+      "Wildlife",
+      "Agriculture",
+      "Fast-growing Economy"
+    ],
+    "region": "Rift Valley"
+  },
+  {
+    "name": "Namanga",
+    "description": "Border town between Kenya and Tanzania.",
+    "features": [
+      "Border Trade",
+      "Maasai Culture",
+      "Tourism Gateway"
+    ],
+    "region": "Rift Valley"
+  },
+  {
+    "name": "Nanyuki",
+    "description": "A gateway to Mount Kenya, with British military presence.",
+    "features": [
+      "British Army Base",
+      "Mount Kenya Views",
+      "Cool Climate"
+    ],
+    "region": "Central Kenya"
+  },
+  {
+    "name": "Narok",
+    "description": "Gateway to Masai Mara Game Reserve.",
+    "features": [
+      "Maasai Culture",
+      "Tourism",
+      "Wheat Farming"
+    ],
+    "region": "Rift Valley"
+  },
+  {
+    "name": "Nyahururu",
+    "description": "High-altitude town famous for Thompson's Falls.",
+    "features": [
+      "Waterfalls",
+      "Athletics Training",
+      "Tourism"
+    ],
+    "region": "Rift Valley"
+  },
+  {
+    "name": "Nyeri",
+    "description": "Located in central Kenya, famous for coffee farming.",
+    "features": [
+      "Cool Climate",
+      "Coffee Farming",
+      "Mt. Kenya Proximity"
+    ],
+    "region": "Central Kenya"
+  },
+  {
+    "name": "Ol Kalou",
+    "description": "Agricultural town in Nyandarua County.",
+    "features": [
+      "Potato Farming",
+      "Dairy Industry",
+      "Cool Weather"
+    ],
+    "region": "Central Kenya"
+  },
+  {
+    "name": "Ongata Rongai",
+    "description": "A rapidly growing residential town near Nairobi.",
+    "features": [
+      "Residential Estates",
+      "Maasai Culture",
+      "Educational Institutions"
+    ],
+    "region": "Rift Valley"
+  },
+  {
+    "name": "Oyugis",
+    "description": "Commercial center in Homa Bay County.",
+    "features": [
+      "Agriculture",
+      "Trade Center",
+      "Cultural Sites"
+    ],
+    "region": "Western Kenya"
+  },
+  {
+    "name": "Ruiru",
+    "description": "Industrial town with growing residential areas.",
+    "features": [
+      "Coffee Estates",
+      "Industries",
+      "Housing Estates"
+    ],
+    "region": "Central Kenya"
+  },
+  {
+    "name": "Sagana",
+    "description": "Town famous for white water rafting and fish farming.",
+    "features": [
+      "Water Sports",
+      "Fish Farming",
+      "Agricultural Processing"
+    ],
+    "region": "Central Kenya"
+  },
+  {
+    "name": "Sultan Hamud",
+    "description": "Transport hub along Mombasa Road.",
+    "features": [
+      "Transport Hub",
+      "Kamba Culture",
+      "Livestock Market"
+    ],
+    "region": "Eastern Kenya"
+  },
+  {
+    "name": "Taveta",
+    "description": "A town near the border with Tanzania.",
+    "features": [
+      "Agriculture",
+      "Trade Center",
+      "Border Crossing"
+    ],
+    "region": "Coast"
+  },
+  {
+    "name": "Thika",
+    "description": "An industrial and agricultural town near Nairobi.",
+    "features": [
+      "Factories",
+      "Pineapple Farming",
+      "Busy Highway"
+    ],
+    "region": "Central Kenya"
+  },
+  {
+    "name": "Ukunda",
+    "description": "Coastal tourism hub near Diani Beach.",
+    "features": [
+      "Beach Tourism",
+      "Water Sports",
+      "Coastal Culture"
+    ],
+    "region": "Coast"
+  },
+  {
+    "name": "Voi",
+    "description": "A key town along the Mombasa-Nairobi highway.",
+    "features": [
+      "Tsavo National Park",
+      "Trade Center",
+      "Transport Hub"
+    ],
+    "region": "Coast"
+  },
+  {
+    "name": "Wajir",
+    "description": "A semi-arid town in northeastern Kenya.",
+    "features": [
+      "Livestock Trade",
+      "Islamic Culture",
+      "Dry Climate"
+    ],
+    "region": "North Eastern"
+  },
+  {
+    "name": "Watamu",
+    "description": "Coastal town famous for marine national park.",
+    "features": [
+      "Marine Park",
+      "Beach Tourism",
+      "Sea Turtle Conservation"
+    ],
+    "region": "Coast"
+  },
+  {
+    "name": "Webuye",
+    "description": "Industrial town known for paper manufacturing.",
+    "features": [
+      "Paper Industry",
+      "Forestry",
+      "Pan Paper Mills"
+    ],
+    "region": "Western Kenya"
+  }
+]
