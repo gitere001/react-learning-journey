@@ -43,7 +43,7 @@ Kenyan Towns Explorer is a React-based search functionality that allows users to
    ```
 4. Start the development server:
    ```sh
-   npm start
+   npm run dev
    ```
 
 
