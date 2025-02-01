@@ -1,0 +1,47 @@
+.userCard {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 8px;
+  flex-grow: 1;
+  min-width: calc((100% - 40px) / 3);
+  max-width: calc((100% - 40px) / 3);
+}
+.image-name {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.image-name > img {
+  border-radius: 50%;
+  max-width: 300px;
+}
+.name {
+  text-align: center;
+}
+.name p {
+  color: #4b5563;
+}
+.userCard main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.userCard main p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4b5563;
+}
+.details-icon {
+  color: #3b82f6;
+}
+@media (max-width: 600px) {
+  .userCard {
+    max-width: 100%;
+  }
+}

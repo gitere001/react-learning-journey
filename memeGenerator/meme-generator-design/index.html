@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Generator</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <img src="https://cdn-icons-png.flaticon.com/512/1236/1236936.png" alt="Meme Icon" class="icon">
+        <h1>Meme Generator</h1>
+      </div>
+    </header>
+
+    <!-- Input Fields -->
+    <div class="input-fields">
+      <input type="text" id="top-text" placeholder="Enter top text..." class="text-input">
+      <input type="text" id="bottom-text" placeholder="Enter bottom text..." class="text-input">
+    </div>
+
+    <!-- Generate Button -->
+    <button id="generate-btn">Generate Meme</button>
+
+    <!-- Meme Display Area -->
+    <div class="meme-display">
+      <img id="meme-image" src="" alt="Meme Image">
+      <div id="top-text-overlay" class="meme-text top-text"></div>
+      <div id="bottom-text-overlay" class="meme-text bottom-text"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #eeeded;
+}
+#root {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 30px;
+	min-height: 100vh;
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 20px;
+}
+header {
+
+	width: 100%;
+
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border-radius: 8px;
+	background-color: white;
+}
+header h1 {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+
+}
+.usersIcon {
+	width: 50px;
+	color: rgb(13, 56, 158);
+}
+header p {
+	opacity: 0.7;
+}
+.input-action {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+}
+.input-action input {
+	height: 35px;
+	border: 1px solid #ccc;
+	outline: none;
+	border-radius: 5px;
+	flex-grow: 1;
+	padding: 0 10px 0 15px;
+	font-size: 1rem;
+}
+.input-action button {
+	display: inline-block;
+	height: 35px;
+
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	padding: 0 10px;
+	font-size: 1rem;
+	background-color: rgb(31, 30, 30);
+	color: white;
+}
+.users-Container {
+
+	display: flex;
+	flex-wrap: wrap;
+
+	width: 100%;
+	gap: 20px;
+
+}
+.spinner-container {
+	margin-top: 30px;
+	width: 100%;
+	text-align: center;
+}
+.spinner {
+	animation: spin 1s linear infinite;
+
+  }
+  .no-users {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	border-radius: 8px;
+	background-color: white;
+	color: #4b5563;
+	font-size: 18px;
+
+  }
+
+  @keyframes spin {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+  }
+
+
+  @media (max-width: 600px) {
+	#root {
+		justify-content: start;
+
+	}
+  }
