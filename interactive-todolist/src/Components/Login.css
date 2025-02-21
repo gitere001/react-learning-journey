@@ -1,0 +1,91 @@
+/* Container styles */
+.login-container {
+	width: 100%;
+	max-width: 600px;
+	padding: 2rem;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+
+  }
+
+  /* Heading styles */
+  .login-container h2 {
+	text-align: center;
+	font-size: 1.8rem;
+	font-weight: bold;
+	background: linear-gradient(to right, #2563eb, #9333ea);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 15px;
+  }
+
+  /* Form styles */
+  .login-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+  }
+
+  /* Fieldset styles */
+  fieldset {
+	border: none;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+  }
+
+  /* Label styles */
+  label {
+	color: #555;
+	font-size: 0.9rem;
+	font-weight: 500;
+  }
+
+  /* Input styles */
+  input {
+	width: 100%;
+	padding: 0.8rem;
+	border: 2px solid #e1e1e1;
+	border-radius: 6px;
+	font-size: 1rem;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+	outline: none;
+  }
+
+  input:focus {
+	border-color: #4a90e2;
+	box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+  }
+
+  input::placeholder {
+	color: #aaa;
+  }
+
+  /* Error message styles */
+  .error {
+	align-self: center;
+	margin-top: -0.5rem;
+  }
+
+  .error small {
+	color: #e74c3c;
+	font-size: 0.8rem;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 480px) {
+	.login-container {
+	  margin: 60px 20px;
+	  padding: 1.5rem;
+	}
+
+	.login-container h2 {
+	  font-size: 1.5rem;
+	}
+
+	input {
+	  padding: 0.7rem;
+	}
+  }

@@ -1,0 +1,165 @@
+/* Main Container */
+.main-home-container {
+	max-width: 600px;
+	margin: 20px auto;
+	padding: 20px;
+  }
+
+  /* Greeting */
+  .greeting {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 20px;
+  }
+
+  .morning-icon {
+	color: #ffb703; /* Warm sunrise color */
+  }
+
+  .day-icon {
+	color: #f59e0b; /* Bright orange for afternoon */
+  }
+
+  .night-icon {
+	color: #1e3a8a; /* Dark blue for night */
+  }
+
+
+  .greeting h2 {
+	font-size: 20px;
+	color: #333;
+	font-weight: 300;
+  }
+
+  .username {
+	font-weight: 600;
+	color: #1e40af;
+  }
+
+  /* Task Form */
+  .task-form {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 20px;
+  }
+
+  .task-input {
+	flex: 1;
+	padding: 12px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	font-size: 16px;
+  }
+
+  .add-task-btn {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 12px;
+	background: #2563eb;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+  }
+
+  .add-task-btn:hover {
+	background: #1e3a8a;
+  }
+
+  .plus-icon {
+	width: 18px;
+	height: 18px;
+  }
+
+  /* Task List */
+  .task-list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+  }
+
+  /* Empty State */
+  .empty-state {
+	text-align: center;
+	padding: 30px 0;
+	color: #777;
+  }
+
+  .check-icon {
+	width: 50px;
+	height: 50px;
+	color: #10b981;
+	margin-bottom: 10px;
+  }
+
+  /* Task Item */
+  .task-item {
+	display: flex;
+	align-items: center;
+	background: white;
+	padding: 10px;
+	border-radius: 6px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease;
+  }
+
+  .task-item:hover {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .task-toggle {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+  }
+
+  .task-completed {
+	width: 20px;
+	height: 20px;
+	color: #10b981;
+  }
+
+  .task-pending {
+	width: 20px;
+	height: 20px;
+	color: #bbb;
+  }
+
+  .task-text {
+	flex: 1;
+	font-size: 16px;
+	color: #333;
+  }
+
+  .task-text.completed {
+	text-decoration: line-through;
+	color: #888;
+  }
+
+  /* Delete Button */
+  .task-delete {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+	opacity: 1;
+	transition: opacity 0.3s ease;
+  }
+
+  .task-item:hover .task-delete {
+	opacity: 1;
+  }
+
+  .task-delete svg {
+	width: 16px;
+	height: 16px;
+	color: #888;
+  }
+
+  .task-delete:hover svg {
+	color: #e11d48;
+  }

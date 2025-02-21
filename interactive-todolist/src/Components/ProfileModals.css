@@ -1,0 +1,251 @@
+/*============= Profile Modals Container =============*/
+.profile-modals-container {
+  position: absolute;
+  top: 140%;
+  width: 100%;
+  max-width: 300px;
+  right: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  border-radius: 10px;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 20px;
+  visibility: hidden;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  backdrop-filter: blur(8px);
+  pointer-events: none;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.show-profile-modal {
+  z-index: 1000;
+  opacity: 1;
+  transform: translate(-50%, 0);
+  visibility: visible;
+  pointer-events: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.04);
+}
+
+/*============= Profile Modals Content Animation =============*/
+.profile-modals-container > * {
+  transform: scale(0.95);
+  opacity: 0;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.show-profile-modal > * {
+  transform: scale(1);
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+
+/*============= Profile Structure =============*/
+.main-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading-text {
+  width: 60%;
+  text-align: right;
+}
+
+/*============= Profile Username Section =============*/
+.profile-username {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.profile-user-icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f3f4f6;
+}
+
+.profile-username-title {
+  color: #111827;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.profile-username-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/*============= Profile Icons =============*/
+.close-icon,
+.edit-icon {
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.close-icon:hover {
+  color: #111827;
+}
+
+.edit-icon {
+  width: 20px;
+}
+
+/*============= Profile Buttons =============*/
+.profile-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.update-username-btn {
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+}
+
+.update-username-btn:hover {
+  background-color: #0056d2;
+}
+
+/*============= Update Username Section =============*/
+.update-username {
+  flex-basis: 75%;
+  display: flex;
+  gap: 10px;
+}
+
+.update-username input {
+  height: 35px;
+  font-size: 14px;
+  max-width: 80%;
+}
+
+/*============= Password Management =============*/
+.change-password {
+  background-color: white;
+}
+
+.change-password:hover {
+  background-color: #f3f4f6;
+}
+
+.log-out {
+  background-color: #ef4444;
+  color: white;
+}
+
+.log-out:hover {
+  background-color: #dc2626;
+}
+
+/*============= Password Form =============*/
+.change-password-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.change-password-inputs {
+  position: relative;
+}
+
+.change-password-inputs input {
+  height: 30px;
+}
+
+.change-password-inputs label {
+  margin-bottom: 0;
+}
+
+.change-password-error {
+  position: absolute;
+  color: red;
+  top: 100%;
+  left: 50%;
+  width: max-content;
+  transform: translate(-50%);
+}
+
+/*============= Feedback Messages =============*/
+.feedbackMessage {
+  position: absolute;
+  border: 1px solid;
+  top: 10%;
+  z-index: 10001;
+  border-radius: 10px;
+  padding: 10px 15px;
+  left: 50%;
+  transform: translate(-50%);
+  width: max-content;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.success-feedback {
+  background-color: #d4edda;
+  color: #155724;
+  border-color: #c3e6cb;
+}
+
+.error-feedback {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-color: #f5c6cb;
+}
+
+/*============= Back Navigation =============*/
+.back-icon {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #272a31;
+}
+
+.back-icon:hover {
+  color: #111827;
+}
+
+.back-arrow {
+  color: #6b7280;
+  width: 16px;
+}
+
+/*============= Update Password Button =============*/
+.update-password-btn {
+  font-size: 14px;
+}

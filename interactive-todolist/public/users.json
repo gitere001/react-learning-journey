@@ -1,0 +1,12 @@
+[
+  { "userName": "gitere001", "password": "securePass123" },
+  { "userName": "johnDoe", "password": "password456" },
+  { "userName": "janeSmith", "password": "helloWorld789" },
+  { "userName": "mikeDeveloper", "password": "codeMaster321" },
+  { "userName": "lisaTech", "password": "techGeek007" },
+  { "userName": "emmaCoder", "password": "debug2024" },
+  { "userName": "markAdmin", "password": "adminAccess999" },
+  { "userName": "ninaUser", "password": "welcomeBack123" },
+  { "userName": "daveEngineer", "password": "engineerLife555" },
+  { "userName": "lucasDesigner", "password": "designStar777" }
+]

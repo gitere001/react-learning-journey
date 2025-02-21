@@ -1,0 +1,48 @@
+/* Header.css */
+
+.header {
+	background-color: white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 16px 0;
+	width: 100%;
+	position: relative;
+  }
+
+  .header-container {
+
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+
+  .header-title {
+	font-size: 24px;
+	font-weight: bold;
+	background: linear-gradient(to right, #2563eb, #9333ea);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+
+
+  .profile-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background 0.3s ease-in-out;
+  }
+
+  .profile-icon:hover {
+	background-color: #f3f4f6;
+  }
+
+  .profile-icon svg {
+	width: 20px;
+	height: 20px;
+	color: #4b5563;
+  }
