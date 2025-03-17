@@ -1,0 +1,264 @@
+.payment-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #4b5563;
+  transition: color 0.2s ease;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  color: #111827;
+}
+
+.Checkout-heading {
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.Checkout-subheading {
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+.Checkout-border {
+  border: 0.5px solid #e5e7eb;
+  margin-bottom: 24px;
+}
+
+.payment-amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.payment-form > label {
+  margin-bottom: -10px;
+}
+
+.phone-input-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.phone-input-wrapper .phone-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #4b5563;
+  left: 8px;
+  opacity: 0.5;
+}
+
+.phone-input-wrapper input {
+  width: 100%;
+  padding: 15px 20px 15px 40px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 1rem;
+  outline: none;
+}
+
+.phone-input-wrapper input:focus {
+  border-color: #acc8f4;
+}
+
+.payment-btn {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.pay-now-button {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.pay-now-button:hover {
+  background: #2563eb;
+}
+
+.payment-status {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.4s ease-out, opacity 0.4s ease-out;
+}
+.show-payment-modal {
+  max-height: 300px;
+  opacity: 1;
+  visibility: visible;
+}
+.idle {
+  align-items: stretch;
+}
+
+.loader {
+  color: #2563eb;
+  width: 54px;
+  height: 54px;
+  animation: spin 1s linear infinite;
+}
+
+.processing > h2,
+.request-sent > h2,
+.payment-success h2,
+.checking-payment h2 {
+  color: #111827;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.processing > p,
+.request-sent > p,
+.payment-success p,
+.checking-payment p {
+  color: #4b5563;
+}
+
+.request-sent > .icon {
+  color: #2563eb;
+  width: 54px;
+  height: 54px;
+}
+.checking-icon-container {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+.checking-icon {
+  width: 100%;
+  height: 100%;
+  color: #4361ee;
+}
+
+.checking-circle {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+  animation: rotate-circle 2s linear infinite;
+  transform-origin: center;
+}
+
+.checking-dot {
+  animation: pulse 1s ease-in-out infinite alternate;
+}
+
+.success-icon-container {
+  width: 4rem;
+  height: 4rem;
+  background-color: #d1fae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.success-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #22c55e;
+}
+
+.error-icon-container {
+  width: 4rem;
+  height: 4rem;
+  background-color: #fee2e2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.error-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #ef4444;
+}
+
+.return-home-button {
+  color: #2563eb;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.return-home-button:hover {
+  color: #1d4ed8;
+}
+
+.retry-transaction {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.retry-transaction:hover {
+  background-color: #1d4ed8;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
