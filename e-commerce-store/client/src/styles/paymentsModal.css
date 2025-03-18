@@ -6,6 +6,15 @@
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  overflow: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.payment-container.show-main-payment-container {
+  opacity: 1;
+  transform: scaleY(1);
 }
 
 .back-button {
@@ -99,6 +108,12 @@
 .pay-now-button:hover {
   background: #2563eb;
 }
+.pay-now-button:disabled {
+  background-color: #ccc; 
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
 
 .payment-status {
   display: flex;

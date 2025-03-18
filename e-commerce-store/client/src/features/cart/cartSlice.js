@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+
 const initialState = {
   cart: [],
   showCartModal: false,
@@ -42,8 +43,9 @@ const cartSlice = createSlice({
     checkingOut: (state, action) => {
 
       state.showCartModal = false
-      state.cartTotal=action.payload
-    }
+      state.cartTotal = action.payload
+    },
+    clearCart: (state) => { state.cart = []; state.cartTotal = 0 }
   }
 });
 
@@ -54,7 +56,8 @@ export const {
   removeItemFromCart,
   openCartModal,
   closeCartModal,
-  checkingOut
+  checkingOut,
+  clearCart
 } = cartSlice.actions;
 const cartReducer = cartSlice.reducer
 

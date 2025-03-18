@@ -83,7 +83,6 @@ const stkQuery = async (req, res) => {
 };
 
 const callback = async (req, res) => {
-    console.log('M-Pesa Callback Data:', JSON.stringify(req.body, null, 2));
     res.status(200).json("success");
 };
 

@@ -1,6 +1,6 @@
 import "../styles/ProductList.css";
 import PostCard from "./PostCard";
-import { ShoppingCart, Filter, Accessibility } from "lucide-react";
+import { ShoppingCart, Filter } from "lucide-react";
 import CartModal from "./CartModal";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useReducer, useState } from "react";
@@ -8,6 +8,7 @@ import { fetchProducts } from "../features/products/productsSlice";
 import filterProducts from "../utils/filterProducts";
 import SearchProduct from "./SearchProduct";
 import { openCartModal } from "../features/cart/cartSlice";
+import useDeviceType from "../utils/useDeviceType";
 
 export const ACTIONS = {
   SORT_BY_NAME_ASC: "sort_by_name_asc",
@@ -62,14 +63,13 @@ export default function ProductList() {
   const initialState = { filter: ACTIONS.SORT_BY_NAME_ASC, products: [] };
   const [state, dispatchFilter] = useReducer(reducer, initialState);
   const { cart } = useSelector((state) => state.cart);
-  useEffect(() => {
-    dispatch(fetchProducts());
-  }, []);
+
   useEffect(() => {
     if (products && products.length > 0 && searchStr.trim() === "") {
       dispatchFilter({ type: state.filter, payload: products });
     }
   }, [products, state.filter]);
+  console.log(useDeviceType());
 
   const productsElements = state.products.map((product) => (
     <PostCard

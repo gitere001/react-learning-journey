@@ -1,11 +1,37 @@
 import { ArrowLeft, Loader2, Phone } from "lucide-react";
 import PhoneInput from "./PhoneInput";
 import "../../styles/paymentsModal.css";
+import { useDispatch, useSelector } from "react-redux";
+// import CartModal from "../CartModal";
+import {
+  closePaymentModal,
+  resetPaymentStatus,
+} from "../../features/payment/paymentSlice";
+import { useState } from "react";
+// 'idle', 'processing', 'request-sent', 'checking-payment' 'payment-success', 'payment-error'
 
 function PaymentModal() {
+  const [mobile, setMobile] = useState("");
+  const totalMoney = useSelector((state) => state.cart.cartTotal);
+  const { paymentStatus, error, showPaymentModal, checkoutRequestID } =
+    useSelector((state) => state.payment);
+  const dispatch = useDispatch();
+  console.log(paymentStatus);
+  function handleReturnHome() {
+    dispatch(resetPaymentStatus());
+    dispatch(closePaymentModal());
+  }
+
   return (
-    <div className="payment-container">
-      <span className="back-button">
+    <div
+      className={`payment-container ${
+        showPaymentModal ? "show-main-payment-container" : ""
+      }`}
+    >
+      <span
+        onClick={() => dispatch(closePaymentModal())}
+        className="back-button"
+      >
         <ArrowLeft />
         Back
       </span>
@@ -17,22 +43,39 @@ function PaymentModal() {
         <hr className="Checkout-border" />
         <div className="payment-amount">
           <span>Amount</span>
-          <h2>Kes 300.00</h2>
+          <h2>Kes {totalMoney.toFixed(2)}</h2>
         </div>
-        <div className="payment-status idle">
-          <PhoneInput />
+        {/* <CartModal /> */}
+        <div
+          className={`payment-status idle ${
+            paymentStatus === "idle" ? "show-payment-modal" : ""
+          }`}
+        >
+          <PhoneInput mobile={mobile} setMobile={setMobile}/>
         </div>
-        <div className="payment-status processing">
+        <div
+          className={`payment-status processing ${
+            paymentStatus === "processing" ? "show-payment-modal" : ""
+          }`}
+        >
           <Loader2 className="loader" />
           <h2>Processing Payment...</h2>
           <p>Please wait while we initiate your payment</p>
         </div>
-        <div className="payment-status request-sent">
+        <div
+          className={`payment-status request-sent ${
+            paymentStatus === "request-sent" ? "show-payment-modal" : ""
+          }`}
+        >
           <Phone className="icon" />
           <h2>Payment request sent!</h2>
-          <p>Please enter your M-Pesa PIN on phone 0714584667</p>
+          <p>Please enter your M-Pesa PIN on phone {mobile}</p>
         </div>
-        <div className="payment-status checking-payment show-payment-modal">
+        <div
+          className={`payment-status checking-payment ${
+            paymentStatus === "checking-payment" ? "show-payment-modal" : ""
+          }`}
+        >
           <div className="checking-icon-container">
             <svg
               className="checking-icon"
@@ -60,7 +103,11 @@ function PaymentModal() {
           <h2>Checking payment status...</h2>
           <p>Please wait while we verify your transaction</p>
         </div>
-        <div className="payment-status payment-success">
+        <div
+          className={`payment-status payment-success ${
+            paymentStatus === "payment-success" ? "show-payment-modal" : ""
+          }`}
+        >
           <div className="success-icon-container">
             <svg
               className="success-icon"
@@ -79,9 +126,15 @@ function PaymentModal() {
 
           <h2>Payment Successful!</h2>
           <p>Thank you for your purchase</p>
-          <a className="return-home-button">Return to Home</a>
+          <a className="return-home-button" onClick={() => handleReturnHome()}>
+            Return to Home
+          </a>
         </div>
-        <div className="payment-status payment-error">
+        <div
+          className={`payment-status payment-error ${
+            paymentStatus === "payment-failed" ? "show-payment-modal" : ""
+          }`}
+        >
           <div className="error-icon-container">
             <svg
               className="error-icon"
@@ -98,8 +151,13 @@ function PaymentModal() {
             </svg>
           </div>
           <h2>Payment failed</h2>
-          <p>Transaction failed. Please try again.</p>
-          <button className="retry-transaction">Try again</button>
+          <p>{error}</p>
+          <button
+            className="retry-transaction"
+            onClick={() => dispatch(resetPaymentStatus())}
+          >
+            Try again
+          </button>
         </div>
       </div>
     </div>
