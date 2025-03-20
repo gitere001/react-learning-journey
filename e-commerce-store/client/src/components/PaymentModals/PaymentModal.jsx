@@ -29,7 +29,10 @@ function PaymentModal() {
       }`}
     >
       <span
-        onClick={() => dispatch(closePaymentModal())}
+        onClick={() => {
+          dispatch(closePaymentModal());
+          dispatch(resetPaymentStatus());
+        }}
         className="back-button"
       >
         <ArrowLeft />
@@ -51,7 +54,7 @@ function PaymentModal() {
             paymentStatus === "idle" ? "show-payment-modal" : ""
           }`}
         >
-          <PhoneInput mobile={mobile} setMobile={setMobile}/>
+          <PhoneInput mobile={mobile} setMobile={setMobile} />
         </div>
         <div
           className={`payment-status processing ${

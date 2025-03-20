@@ -9,6 +9,7 @@ import filterProducts from "../utils/filterProducts";
 import SearchProduct from "./SearchProduct";
 import { openCartModal } from "../features/cart/cartSlice";
 import useDeviceType from "../utils/useDeviceType";
+import FilterProducts from "./FilterProducts";
 
 export const ACTIONS = {
   SORT_BY_NAME_ASC: "sort_by_name_asc",
@@ -63,13 +64,14 @@ export default function ProductList() {
   const initialState = { filter: ACTIONS.SORT_BY_NAME_ASC, products: [] };
   const [state, dispatchFilter] = useReducer(reducer, initialState);
   const { cart } = useSelector((state) => state.cart);
+  const device = useDeviceType();
+  console.log(device);
 
   useEffect(() => {
     if (products && products.length > 0 && searchStr.trim() === "") {
       dispatchFilter({ type: state.filter, payload: products });
     }
   }, [products, state.filter]);
-  console.log(useDeviceType());
 
   const productsElements = state.products.map((product) => (
     <PostCard
@@ -118,28 +120,31 @@ export default function ProductList() {
     <div className="fetch-data-container">
       <header className="header">
         <h2>FakeStore</h2>
-        <i className="filter-icon">
-          <Filter />
-        </i>
-        <select
-          className="filter"
-          value={filterOption}
-          onChange={(e) => handleChangeFilter(e)}
-        >
-          <option value="name-asc">Name (A-Z)</option>
-          <option value="name-desc">Name (Z-A)</option>
-          <option value="price-asc">Price (Low to High)</option>
-          <option value="price-desc">Price (High to Low)</option>
-        </select>
+        {device !== "mobile" && (
+          <FilterProducts
+            filterOption={filterOption}
+            handleChangeFilter={handleChangeFilter}
+          />
+        )}
 
         <i className="cart" onClick={() => dispatch(openCartModal())}>
-          {cart.length > 0 && <span className="cart-item-number">{cart.reduce((acc, cur) => acc+cur.count, 0)}</span>}
+          {cart.length > 0 && (
+            <span className="cart-item-number">
+              {cart.reduce((acc, cur) => acc + cur.count, 0)}
+            </span>
+          )}
           <ShoppingCart />
         </i>
         <CartModal />
       </header>
 
       <main className="main-section">
+      {device === "mobile" && (
+          <FilterProducts
+            filterOption={filterOption}
+            handleChangeFilter={handleChangeFilter}
+          />
+        )}
         <SearchProduct
           dispatchFilter={dispatchFilter}
           searchStr={searchStr}

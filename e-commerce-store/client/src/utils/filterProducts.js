@@ -11,9 +11,9 @@ export default function filterProducts(products, filterOption) {
 		case ACTIONS.SORT_BY_NAME_DESC:
 			return tempProducts.sort((a, b) => b.title.localeCompare(a.title))
 		case ACTIONS.SORT_BY_PRICE_ASC:
-			return tempProducts.sort((a, b) => a.price - b.price)
+			return tempProducts.sort((a, b) =>  parseInt(String(a.price)[0]) - parseInt(String(b.price)[0]))
 		case ACTIONS.SORT_BY_PRICE_DESC:
-			return tempProducts.sort((a, b) => b.price - a.price)
+			return tempProducts.sort((a, b) => parseInt(String(b.price)[0]) - parseInt(String(a.price)[0]))
 		default:
 			return tempProducts
 	}

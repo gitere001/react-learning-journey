@@ -45,7 +45,8 @@ const cartSlice = createSlice({
       state.showCartModal = false
       state.cartTotal = action.payload
     },
-    clearCart: (state) => { state.cart = []; state.cartTotal = 0 }
+    clearCart: (state) => { state.cart = []; state.cartTotal = 0 },
+    buyNow: (state, action) => { state.cartTotal = action.payload }
   }
 });
 
@@ -57,7 +58,8 @@ export const {
   openCartModal,
   closeCartModal,
   checkingOut,
-  clearCart
+  clearCart,
+  buyNow
 } = cartSlice.actions;
 const cartReducer = cartSlice.reducer
 

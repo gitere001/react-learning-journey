@@ -39,6 +39,7 @@
 .Checkout-subheading {
   color: #4b5563;
   margin-bottom: 20px;
+  /* text-align: center; */
 }
 
 .Checkout-border {
@@ -109,7 +110,7 @@
   background: #2563eb;
 }
 .pay-now-button:disabled {
-  background-color: #ccc; 
+  background-color: #ccc;
   cursor: not-allowed;
   opacity: 0.6;
 }
@@ -145,7 +146,8 @@
 .processing > h2,
 .request-sent > h2,
 .payment-success h2,
-.checking-payment h2 {
+.checking-payment h2,
+.payment-error h2 {
   color: #111827;
   font-weight: 600;
   font-size: 20px;
@@ -154,8 +156,11 @@
 .processing > p,
 .request-sent > p,
 .payment-success p,
-.checking-payment p {
+.checking-payment p,
+.payment-error p {
   color: #4b5563;
+  text-align: center;
+
 }
 
 .request-sent > .icon {
@@ -275,5 +280,10 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .Checkout-subheading {
+    text-align: center;
   }
 }

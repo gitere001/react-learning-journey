@@ -1,7 +1,8 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit"
 import { getErrorMessage } from "../../utils/paymentErrors";
 import axios from "axios"
-const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+// const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+const BASE_URL="http://178.128.43.230/mpesa"
 const initialState = {
 
 	paymentStatus: 'idle', // 'idle', 'processing', 'request-sent', 'checking-payment' 'payment-success', 'payment-error'
@@ -14,7 +15,7 @@ const initialState = {
 export const stkPush = createAsyncThunk('payment/stkPush', async (payload, thunkApi) => {
 	console.log(payload);
 	try {
-		const response = await axios.post(`${BASE_URL}/stk`, payload)
+		const response = await axios.post("/stk", payload)
 		return response.data
 
 	} catch (error) {
@@ -24,7 +25,7 @@ export const stkPush = createAsyncThunk('payment/stkPush', async (payload, thunk
 })
 export const stkQuery = createAsyncThunk('payment/stkQuery', async (payload, thunkApi) => {
 	try {
-		const response = await axios.post(`${BASE_URL}/stkquery`, payload)
+		const response = await axios.post("/stkquery", payload)
 		console.log("payload: ", payload);
 		const data = response.data
 		console.log(data.data);
