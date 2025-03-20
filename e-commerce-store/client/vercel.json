@@ -2,7 +2,7 @@
 	"rewrites": [
 	  {
 		"source": "/:path*",
-		"destination": "http://178.128.43.230/mpesa:path*"
+		"destination": "http://178.128.43.230/mpesa/:path*"
 	  }
 	]
   }
