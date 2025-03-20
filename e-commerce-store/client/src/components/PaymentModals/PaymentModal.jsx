@@ -44,10 +44,10 @@ function PaymentModal() {
           Complete your purchase using M-Pesa
         </p>
         <hr className="Checkout-border" />
-        <div className="payment-amount">
+        {paymentStatus !== 'payment-success' && <div className="payment-amount">
           <span>Amount</span>
           <h2>Kes {totalMoney.toFixed(2)}</h2>
-        </div>
+        </div>}
         {/* <CartModal /> */}
         <div
           className={`payment-status idle ${
