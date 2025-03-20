@@ -62,13 +62,13 @@ cd e-commerce-store
 
 # Install frontend dependencies
 ```
-cd frontend
+cd client
 npm install
 ```
 
 # Install backend dependencies
 ```
-cd ../backend
+cd server
 npm install
 ```
 ### **3️⃣ Environment Variables**
