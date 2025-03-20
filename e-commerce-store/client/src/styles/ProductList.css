@@ -341,4 +341,16 @@
     justify-content: end;
     margin-bottom: 15px;
   }
+  .action-buy {
+    justify-content: start;
+    gap: 10px;
+  }
+  .action-buy button:first-child {
+    flex-grow: 1;
+    flex-basis: calc(100% - 5px);
+  }
+  .action-buy button:last-child {
+    flex-grow: 1;
+    flex-basis: calc(100% - 5px);
+  }
 }
