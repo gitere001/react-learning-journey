@@ -18,6 +18,7 @@ const verifySafaricomIP = (req, res, next) => {
 
 	if (!safaricomWhitelist.includes(clientIp)) {
 		console.log(`Blocked callback from non-whitelisted IP: ${clientIp}`);
+		console.log("Full request headers:", req.headers);
 		return res.status(403).json({ error: "IP not whitelisted" });
 	}
 

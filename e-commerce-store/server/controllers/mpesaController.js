@@ -8,6 +8,7 @@ const home = (req, res) => {
 };
 
 const stkPush = async (req, res) => {
+    console.log(req.token);
     const { phoneNumber, amount } = req.body;
     const formattedPhone = `254${phoneNumber.slice(-9)}`;
 
