@@ -1,0 +1,14 @@
+:root {
+	--primary-color: #4f46e5;
+	--primary-dark: #4338ca;
+	--secondary-color: #1e293b;
+	--text-primary: #1e293b;
+	--text-secondary: #64748b;
+	--background-light: #f8fafc;
+	--white: #ffffff;
+	--transition: all 0.3s ease;
+  }
+.main-container {
+	
+	margin-top: 10vh;
+}

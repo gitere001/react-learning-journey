@@ -1,0 +1,119 @@
+.auth-container {
+	/* min-height: 100vh; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--background-light);
+	padding: 1rem;
+	
+  }
+
+  .auth-card {
+	background-color: var(--white);
+	padding: 2.5rem;
+	border-radius: 1rem;
+	box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+	width: 100%;
+	max-width: 28rem;
+	position: relative;
+  }
+
+  .back-button {
+	position: absolute;
+	top: 1.5rem;
+	left: 1.5rem;
+	background: none;
+	border: none;
+	color: var(--text-secondary);
+	cursor: pointer;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	transition: var(--transition);
+  }
+
+  .back-button:hover {
+	color: var(--text-primary);
+	background-color: var(--background-light);
+  }
+
+  .auth-title {
+	text-align: center;
+	color: var(--text-primary);
+	font-size: 1.875rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+  }
+
+  .auth-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+  }
+
+  .form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+  }
+
+  .form-group label {
+	color: var(--text-primary);
+	font-weight: 500;
+	font-size: 0.875rem;
+  }
+
+  .form-group input {
+	padding: 0.75rem 1rem;
+	border: 1px solid #e2e8f0;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+	color: var(--text-primary);
+	transition: var(--transition);
+  }
+
+  .form-group input:focus {
+	outline: none;
+	border-color: var(--primary-color);
+	box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+  }
+
+  .form-group input::placeholder {
+	color: var(--text-secondary);
+  }
+
+  .auth-button {
+	background-color: var(--primary-color);
+	color: var(--white);
+	padding: 0.75rem 1.5rem;
+	border: none;
+	border-radius: 0.5rem;
+	font-weight: 600;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: var(--transition);
+	margin-top: 0.5rem;
+  }
+
+  .auth-button:hover {
+	background-color: var(--primary-dark);
+  }
+
+  .auth-switch {
+	text-align: center;
+	margin-top: 1.5rem;
+	color: var(--text-secondary);
+	font-size: 0.875rem;
+  }
+
+  .auth-link {
+	color: var(--primary-color);
+	font-weight: 600;
+	text-decoration: none;
+	transition: var(--transition);
+  }
+
+  .auth-link:hover {
+	color: var(--primary-dark);
+	text-decoration: underline;
+  }
