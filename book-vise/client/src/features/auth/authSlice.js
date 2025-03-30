@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-const apiUrl = import.meta.env.VITE_API_BASE_URL;
-console.log(import.meta.env.VITE_API_BASE_URL);
+const apiUrl = "https://bookwise-server-omega.vercel.app/";
+
 
 const initialState = {
 	isLoggedIn: false,

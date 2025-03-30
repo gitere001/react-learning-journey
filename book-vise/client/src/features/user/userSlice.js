@@ -12,7 +12,7 @@ const initialState = {
 // Async thunk for fetching user
 export const fetchUser = createAsyncThunk("user/fetchUser", async (payload, thunkAPI) => {
   try {
-    const res = await axios.post("http://localhost:5000/get-user", payload);
+    const res = await axios.post("https://bookwise-server-omega.vercel.app/get-user", payload);
     return res.data.data;
   } catch (error) {
     return thunkAPI.rejectWithValue(error.response?.data?.message || "Failed to fetch user");
