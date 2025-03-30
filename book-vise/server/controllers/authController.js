@@ -27,14 +27,14 @@ const registerUser = async (req, res) => {
   if (!email || !password || !username) {
     return res.status(400).json({ success: false, message: "All fields are required" });
   }
-  const existingUser = await User.findOne({email})
+  const existingUser = await User.findOne({ email })
   if (existingUser) {
-	return res.status(400).json({success: false, message: "Email already exists"})
+    return res.status(400).json({ success: false, message: "Email already exists" })
   }
 
   const hashedPassword = await bcrypt.hash(password, 10);
 
-  const user = new User({ username, email, password: hashedPassword });
+  const user = new User({ username, email, password: hashedPassword, image: null });
 
   await user.save();
   return res.status(201).json({ success: true, message: "User registered successfully" });

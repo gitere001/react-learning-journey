@@ -1,15 +1,20 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
+const apiUrl = import.meta.env.VITE_API_BASE_URL;
+console.log(import.meta.env.VITE_API_BASE_URL);
 
 const initialState = {
 	isLoggedIn: false,
 	loading: false,
 	error: null,
+	success: null,
+	showAuthModal: false,
 };
+console.log("apiUrl", apiUrl);
 
 export const loginUser = createAsyncThunk("auth/loginUser", async (payload, thunkAPI) => {
 	try {
-		const res = await axios.post("http://localhost:5000/login-user", payload);
+		const res = await axios.post(`${apiUrl}/login-user`, payload);
 		return res.data;
 	} catch (error) {
 		return thunkAPI.rejectWithValue(error.response ? error.response.data : error.message);
@@ -18,7 +23,7 @@ export const loginUser = createAsyncThunk("auth/loginUser", async (payload, thun
 
 export const registerUser = createAsyncThunk("auth/registerUser", async (payload, thunkAPI) => {
 	try {
-		const res = await axios.post("http://localhost:5000/register-user", payload);
+		const res = await axios.post(`${apiUrl}/register-user`, payload);
 		return res.data;
 	} catch (error) {
 		return thunkAPI.rejectWithValue(error.response ? error.response.data : error.message);
@@ -29,7 +34,21 @@ const authSlice = createSlice({
 	name: "auth",
 	initialState,
 	reducers: {
-		resetAuth: state => { state.error = null; state.isLoggedIn = false; state.loading = false }
+		resetAuth: (state) => {
+			state.error = null;
+			state.isLoggedIn = false;
+			state.loading = false;
+		},
+		resetFeedback: (state) => {
+			state.error = null;
+			state.success = null;
+		},
+		showAuthPage: (state) => {
+			state.showAuthModal = true;
+		},
+		hideAuthPage: (state) => {
+			state.showAuthModal = false;
+		}
 	},
 	extraReducers: (builder) => {
 		builder
@@ -51,6 +70,7 @@ const authSlice = createSlice({
 			})
 			.addCase(registerUser.fulfilled, (state) => {
 				state.loading = false;
+				state.success = true;
 			})
 			.addCase(registerUser.rejected, (state, action) => {
 				state.loading = false;
@@ -59,5 +79,5 @@ const authSlice = createSlice({
 	},
 });
 
-const authReducer = authSlice.reducer
-export default authReducer;
+export default authSlice.reducer;
+export const { resetAuth, resetFeedback, showAuthPage, hideAuthPage } = authSlice.actions;

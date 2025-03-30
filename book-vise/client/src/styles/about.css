@@ -1,7 +1,9 @@
 .about-container {
 	min-height: 100vh;
 	background-color: var(--background-light);
-	padding: 2rem 1rem;
+	/* padding: 2rem 1rem; */
+	margin: 4rem 20px;
+	
   }
 
   .about-hero {

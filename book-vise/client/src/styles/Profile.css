@@ -1,0 +1,70 @@
+.profile-container {
+  background-color: #f2f2f2;
+  width: 100%;
+  max-width: 400px;
+  margin: 6rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-img-wrapper {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  position: relative;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 15px;
+}
+.no-profile-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #83858b;
+}
+.profile-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.update-image {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 4px 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 25px;
+}
+.update-image:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+.profile-username {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.profile-email {
+  color: #83858b;
+}
+@media (max-width: 768px) {
+  .profile-container {
+    width: 90%;
+  }
+}

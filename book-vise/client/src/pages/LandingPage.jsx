@@ -1,13 +1,15 @@
 import React from "react";
 import { Book, ChevronRight, LogIn, Users, Search, Star } from "lucide-react";
 import "../styles/BookVerseLanding.css";
-import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
+import { showAuthPage } from "../features/auth/authSlice";
 
 function BookVerseLanding() {
-  const { isLoggedIn, loading, error } = useSelector((state) => state.userAuth);
-  console.log(isLoggedIn, loading, error);
+  // const { isLoggedIn, loading, error } = useSelector((state) => state.userAuth);
+
   const navigate = useNavigate()
+  const dispatch = useDispatch()
   return (
     <div className="landing-container">
       {/* Hero Section */}
@@ -22,7 +24,7 @@ function BookVerseLanding() {
             before.
           </p>
           <div className="hero-buttons">
-            <button onClick={()=> navigate("/signup")} className="primary-btn">
+            <button onClick={()=> {navigate("/signup"); dispatch(showAuthPage())}} className="primary-btn">
               Get Started <ChevronRight className="btn-icon" />
             </button>
             <button onClick={()=> navigate('/about')} className="secondary-btn">Learn More</button>
@@ -74,7 +76,7 @@ function BookVerseLanding() {
             engage with books.
           </p>
           <div className="cta-buttons">
-            <button onClick={()=> navigate('/signup')} className="primary-btn">Create Free Account</button>
+            <button onClick={()=> {navigate('/signup'); dispatch(showAuthPage())}} className="primary-btn">Create Free Account</button>
             <button onClick={()=> navigate('/about')} className="secondary-btn">Learn More</button>
           </div>
         </div>
