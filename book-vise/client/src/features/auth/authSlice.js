@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-const apiUrl = "https://bookwise-server-omega.vercel.app/";
+const apiUrl = "https://bookwise-server-omega.vercel.app";
 
 
 const initialState = {
